@@ -23,7 +23,6 @@
 import UIKit
 
 class ColojiTableViewCell: UITableViewCell {
-  private let label = ColojiLabel()
   
   var coloji: Coloji? {
     didSet {
@@ -34,17 +33,16 @@ class ColojiTableViewCell: UITableViewCell {
   }
   
   private func addLabel(coloji: Coloji) {
+    let label = ColojiLabel()
     label.coloji = coloji
-    if(label.superview == .none) {
-      label.translatesAutoresizingMaskIntoConstraints = false
+    label.translatesAutoresizingMaskIntoConstraints = false
       contentView.addSubview(label)
       NSLayoutConstraint.activate([
-        label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-        label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-        label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-        label.topAnchor.constraint(equalTo: contentView.topAnchor)
+    label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+    label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+    label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+    label.topAnchor.constraint(equalTo: contentView.topAnchor)
       ])
-    }
   }
 }
 
