@@ -157,10 +157,9 @@
 			};
 			buildConfigurationList = 22CB5BD41D34F21F00F41F7A /* Build configuration list for PBXProject "Coloji" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
