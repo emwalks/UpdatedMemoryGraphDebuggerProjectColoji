@@ -28,7 +28,7 @@ class ColojiCellFormatter {
   private let massiveWasteOfMemory = Data(bytes: [UInt8](repeatElement(0, count: 10 * 1024)))
   
   lazy var configureCell: (UITableViewCell) -> () = {
-    [unowned self] cell in
+    cell in
     if let colojiCell = cell as? ColojiTableViewCell {
       colojiCell.coloji = self.coloji
     }
